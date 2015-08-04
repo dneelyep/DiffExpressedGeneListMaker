@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a3e60c5-3b30-4b21-b61e-508fb84f7e94" name="Default" comment="Add the beginnings of a GUI to let users produce diff-expressed gene lists.&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Experimenting.R" afterPath="$PROJECT_DIR$/Experimenting.R" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.form" afterPath="$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.java" afterPath="$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DiffExpressedGeneListMaker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,11 +70,8 @@
       <file leaf-file-name="frmDiffExpressedGeneListMaker.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="14" selection-start="686" selection-end="686" vertical-scroll-proportion="0.30831644" vertical-offset="103" max-vertical-offset="945">
-              <folding>
-                <element signature="e#560#2056#0" expanded="true" />
-                <element signature="e#2045#2046#0" expanded="true" />
-              </folding>
+            <state line="52" column="1" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.8174442" vertical-offset="287" max-vertical-offset="780">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,9 +104,9 @@
         <option value="$PROJECT_DIR$/src/GeneListMaker.java" />
         <option value="$PROJECT_DIR$/src/frmChooseDataDirectory.form" />
         <option value="$PROJECT_DIR$/src/GeneListParameters.java" />
-        <option value="$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.java" />
         <option value="$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.form" />
         <option value="$PROJECT_DIR$/src/frmChooseDataDirectory.java" />
+        <option value="$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.java" />
       </list>
     </option>
   </component>
@@ -225,6 +218,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunManager" selected="Application.Default">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
@@ -470,10 +464,7 @@
     <entry file="file://$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="51" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="735">
-          <folding>
-            <element signature="e#560#2056#0" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -489,10 +480,7 @@
     <entry file="file://$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="27" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="780">
-          <folding>
-            <element signature="e#560#2056#0" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -515,10 +503,7 @@
     <entry file="file://$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="44" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="780">
-          <folding>
-            <element signature="e#560#2056#0" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -571,11 +556,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frmDiffExpressedGeneListMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="686" selection-end="686" vertical-scroll-proportion="0.30831644" vertical-offset="103" max-vertical-offset="945">
-          <folding>
-            <element signature="e#560#2056#0" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-          </folding>
+        <state line="52" column="1" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.8174442" vertical-offset="287" max-vertical-offset="780">
+          <folding />
         </state>
       </provider>
     </entry>

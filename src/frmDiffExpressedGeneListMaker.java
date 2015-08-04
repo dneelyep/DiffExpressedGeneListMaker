@@ -13,13 +13,27 @@ public class frmDiffExpressedGeneListMaker {
 
     private GeneListParameters geneParameters;
 
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("DEGLMaker (Differentially-expressed gene list maker)");
+        frame.setContentPane(new frmDiffExpressedGeneListMaker().MainForm);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+
+        // Center the form on-screen.
+        frame.setLocationRelativeTo(null);
+
+        frame.setVisible(true);
+    }
+
     public frmDiffExpressedGeneListMaker() {
-        // TODO Break this out into a separate handler method.
+        initActionListeners();
+    }
+
+    private void initActionListeners() {
         btnChooseDataDirectory.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                // TODO Clean up this nastiness.
-                // TODO This code should be moved into frmChooseDataDirectory's constructor, and then MainForm should be made private.
                 JFileChooser fc = new JFileChooser();
                 fc.setDialogTitle("Open data directory");
                 fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -33,29 +47,7 @@ public class frmDiffExpressedGeneListMaker {
                         tfDataDirectory.setText(geneParameters.CELFileDirectory.toString());
                     }
                 }
-/*
-                JFrame pickerFrame = new JFrame("Choose data directory");
-                pickerFrame.setContentPane(new frmChooseDataDirectory().MainForm);
-                pickerFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-                pickerFrame.pack();
-
-                // Center the form on-screen.
-                pickerFrame.setLocationRelativeTo(null);
-
-                pickerFrame.setVisible(true);*/
             }
         });
-    }
-
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("DEGLMaker (Differentially-expressed gene list maker)");
-        frame.setContentPane(new frmDiffExpressedGeneListMaker().MainForm);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-
-        // Center the form on-screen.
-        frame.setLocationRelativeTo(null);
-
-        frame.setVisible(true);
     }
 }
