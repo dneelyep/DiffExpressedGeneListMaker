@@ -79,6 +79,8 @@ public class dlgAddCategory extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 // TODO Ideally the row would be highlighted and the user could start editing immediately after pressing "Add".
                 ((DefaultTableModel)tblCategoryValues.getModel()).addRow(new Object[] {"TODO Value here"});
+
+                ValidateFields();
             }
         });
 
@@ -91,6 +93,8 @@ public class dlgAddCategory extends JDialog {
                 for (int categoryValue : categoryValues) {
                     ((DefaultTableModel)tblCategoryValues.getModel()).removeRow(categoryValue);
                 }
+
+                ValidateFields();
             }
         });
 
@@ -115,11 +119,24 @@ public class dlgAddCategory extends JDialog {
     private void ValidateFields() {
         boolean isValid = true;
 
-        if (txtCategoryName.getText().length() <= 0) {
+        if (txtCategoryName.getText().length() == 0) {
+            // An experimental category without a name shouldn't be add-able.
+            isValid = false;
+        }
+
+        if (tblCategoryValues.getRowCount() == 0) {
+            // An experimental category without any defined values shouldn't be add-able.
             isValid = false;
         }
 
         buttonOK.setEnabled(isValid);
+        if (isValid) {
+            buttonOK.setToolTipText("");
+        } else {
+            // TODO Use constants here.
+            // TODO Do something better than setting the tooltip text - it's not obvious enough.
+            buttonOK.setToolTipText("Please provide a category title and at least one valid value.");
+        }
     }
 
     private void onOK() {
