@@ -2,7 +2,6 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.*;
 import java.util.HashSet;
-import java.util.Set;
 
 public class dlgAddCategory extends JDialog {
 
@@ -23,8 +22,9 @@ public class dlgAddCategory extends JDialog {
         this.setTitle("Add experimental category");
 
         initCategoryModel();
-        initActionListeners();
+        initEventListeners();
 
+        // TODO Disable the OK button until at least a title and value have been added.
 
 // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -59,7 +59,7 @@ public class dlgAddCategory extends JDialog {
         tblCategoryValues.setModel(model);
     }
 
-    private void initActionListeners() {
+    private void initEventListeners() {
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
