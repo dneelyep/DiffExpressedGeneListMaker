@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.*;
 import java.util.HashSet;
@@ -81,7 +83,6 @@ public class dlgAddCategory extends JDialog {
         });
 
         // TODO Fix form scaling positioning.
-        // TODO Disable the OK button until needed info is filled in.
         btnRemove.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -92,6 +93,33 @@ public class dlgAddCategory extends JDialog {
                 }
             }
         });
+
+        txtCategoryName.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                ValidateFields();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                ValidateFields();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+
+            }
+        });
+    }
+
+    private void ValidateFields() {
+        boolean isValid = true;
+
+        if (txtCategoryName.getText().length() <= 0) {
+            isValid = false;
+        }
+
+        buttonOK.setEnabled(isValid);
     }
 
     private void onOK() {
