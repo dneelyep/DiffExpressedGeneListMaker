@@ -57,6 +57,10 @@ public class frmDiffExpressedGeneListMaker {
                 JFileChooser fc = new JFileChooser();
                 fc.setDialogTitle("Open data directory");
                 fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+                // TODO Handle the case here where the file doesn't exist.
+                if (tfDataDirectory.getText().length() > 0) {
+                    fc.setCurrentDirectory(new File(tfDataDirectory.getText()));
+                }
                 int returnVal = fc.showOpenDialog(MainForm);
 
                 if (returnVal == JFileChooser.APPROVE_OPTION) {
